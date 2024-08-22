@@ -514,7 +514,6 @@ body::after {
   justify-content: center
 }
 .popup__body-content img {
-  width: min(70vmin,40vmax);
   -webkit-filter: drop-shadow(0 0 5vmin rgba(251, 188, 4, .45));
   filter: drop-shadow(0 0 5vmin rgba(251, 188, 4, .45))
 }
@@ -526,7 +525,6 @@ body::after {
   z-index: 3;
   position: absolute;
   width: 100%;
-  bottom: min(10vmin,6vmax);
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
@@ -791,7 +789,6 @@ body::after {
 .page .game-container .wheel-spin-button {
   background: url(../img/button.webp) 0 0/cover no-repeat;
   color: #212713;
-  font-size: min(3vmin,1.5vmax);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 8%;
@@ -804,8 +801,6 @@ body::after {
   transform: translate(-50%,-50%);
   letter-spacing: .3vmin;
   z-index: 4;
-  min-height: min(22vmin,11vmax);
-  min-width: min(22vmin,11vmax);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -927,6 +922,12 @@ body::after {
   background-color: #a7d100
 }
 @media (min-width:480px) {
+  .popup__body-content img {
+    width: min(70vmin,40vmax)
+  }
+  .popup__button {
+    bottom: min(10vmin,6vmax)
+  }
   .footer__platform-item svg {
     width: min(6vmin,10vmax);
     height: min(5vmin,7vmax)
@@ -973,6 +974,11 @@ body::after {
   }
   .page__books .book-3 img {
     width: min(25vmin,10vmax)
+  }
+  .page .game-container .wheel-spin-button {
+    min-height: min(22vmin,12.5vmax);
+    min-width: min(22vmin,12.5vmax);
+    font-size: min(3vmin,1.5vmax)
   }
 }
 @media (min-width:480px)and (min-width:1024px) {
@@ -1177,6 +1183,9 @@ body::after {
   body {
     background-attachment: fixed!important
   }
+  .popup__body-content img {
+    width: min(100vmin,60vmax)
+  }
   .footer {
     padding: 2vmin 0
   }
@@ -1195,6 +1204,9 @@ body::after {
   }
   .footer__desc {
     font-size: min(2.8vmin,1.8vmax)
+  }
+  .page__wrapper {
+    position: relative
   }
   .page__header {
     margin-top: min(5vmin,7.22vmax)
@@ -1225,6 +1237,11 @@ body::after {
   .page__books {
     display: none
   }
+  .page .game-container .wheel-spin-button {
+    font-size: min(6vmin,1.8vmax);
+    min-height: min(26vmin,15.5vmax);
+    min-width: min(26vmin,15.5vmax)
+  }
   .page .game-container .game__roulette .wheel-image img {
     width: min(90vmin,60vmax)
   }
@@ -1246,6 +1263,16 @@ body::after {
     min-height: min(8vmin,4vmax);
     height: min(12vmin,6vmax);
     font-size: min(2.75vmin,5vmax)
+  }
+}
+@media (max-width:21.25em) {
+  .popup__button {
+    bottom: 15vmin
+  }
+}
+@media (max-width:480px)and (min-width:21.25em) {
+  .popup__button {
+    bottom: min(20vmin,7vmax)
   }
 }
 @media (min-width:480px)and (max-width:1024px) {
