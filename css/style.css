@@ -646,13 +646,13 @@ body::after {
   display: flex
 }
 .footer__image-item svg {
-  height: min(4vmin,7vmax)
+  height: min(6vmin,10vmax)
 }
 .footer__desc {
   font-family: HelveticaNeueLight;
-  font-size: min(1.1vmin,2vmax);
+  font-size: min(1.4vmin,1vmax);
   font-weight: 300;
-  line-height: 1.1vmin;
+  line-height: 1.5vmin;
   text-align: right;
   color: #e6e6e6
 }
@@ -733,7 +733,6 @@ body::after {
   color: #fff;
   font-size: min(2.4vmin,1.5vmax);
   font-weight: 700;
-  line-height: 1.1;
   letter-spacing: 1%;
   text-align: left;
   text-transform: uppercase
@@ -745,7 +744,6 @@ body::after {
   border-radius: 50%;
   font-size: min(4.5vmin,2.5vmax);
   font-weight: 700;
-  line-height: 1.1;
   letter-spacing: 1%;
   text-align: left;
   text-transform: uppercase;
@@ -791,6 +789,7 @@ body::after {
   position: relative
 }
 .page .game-container .wheel-spin-button {
+  background: url(../img/button.webp) 0 0/cover no-repeat;
   color: #212713;
   font-size: min(3vmin,1.5vmax);
   font-weight: 900;
@@ -805,8 +804,8 @@ body::after {
   transform: translate(-50%,-50%);
   letter-spacing: .3vmin;
   z-index: 4;
-  min-height: min(13vmin,7vmax);
-  min-width: min(17vmin,7vmax);
+  min-height: min(22vmin,11vmax);
+  min-width: min(22vmin,11vmax);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -816,8 +815,8 @@ body::after {
   transform-origin: 0 0
 }
 .page .game-container .wheel-spin-button:hover {
-  -webkit-transform: scale(1.1) translate(-50%,-50%);
-  transform: scale(1.1) translate(-50%,-50%)
+  -webkit-transform: scale(1.02) translate(-50%,-50%);
+  transform: scale(1.02) translate(-50%,-50%)
 }
 .page .game-container .game__roulette .wheel-image img {
   -webkit-filter: drop-shadow(0 22px 36px rgba(0, 0, 0, .25));
@@ -989,6 +988,12 @@ body::after {
 @media (min-width:768px) {
   .footer__left .footer__image {
     display: none
+  }
+  .page__counter span {
+    line-height: 1.1
+  }
+  .page__counter .count {
+    line-height: 1.1
   }
 }
 @media (min-width:1024px) {
@@ -1172,21 +1177,24 @@ body::after {
   body {
     background-attachment: fixed!important
   }
+  .footer {
+    padding: 2vmin 0
+  }
   .footer__platform-item {
     opacity: .7;
     -webkit-filter: grayscale(1);
     filter: grayscale(1)
   }
   .footer__platform-item svg {
-    width: min(12vmin,20vmax);
+    width: min(16.2vmin,20vmax);
     height: min(8vmin,14vmax)
   }
   .footer__app-item svg {
-    width: min(20vmin,30vmax);
-    height: min(8vmin,14vmax)
+    width: min(28vmin,30vmax);
+    height: min(10vmin,14vmax)
   }
   .footer__desc {
-    font-size: min(2.2vmin,2vmax)
+    font-size: min(2.8vmin,1.8vmax)
   }
   .page__header {
     margin-top: min(5vmin,7.22vmax)
