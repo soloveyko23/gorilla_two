@@ -981,6 +981,19 @@ body::after {
     font-size: min(3vmin,1.5vmax)
   }
 }
+@media (max-height:31.25em)and (min-width:480px) {
+  .page__right {
+    flex: initial!important
+  }
+  .page__columns {
+    flex-direction: row!important;
+    justify-content: space-between
+  }
+  .page .game-container .game__cta svg {
+    width: min(75vmin,50vmax)!important;
+    height: min(75vmin,50vmax)!important
+  }
+}
 @media (min-width:480px)and (min-width:1024px) {
   .page__books .book-1 {
     top: min(5vmin,2vmax);
@@ -1206,7 +1219,8 @@ body::after {
     font-size: min(2.8vmin,1.8vmax)
   }
   .page__wrapper {
-    position: relative
+    position: relative;
+    height: 100vmax
   }
   .page__header {
     margin-top: min(5vmin,7.22vmax)
@@ -1243,7 +1257,7 @@ body::after {
     min-width: min(26vmin,15.5vmax)
   }
   .page .game-container .game__roulette .wheel-image img {
-    width: min(90vmin,60vmax)
+    width: min(80vmin,40vmax)
   }
   .page .game-container .game__roulette .wheel-pointer {
     left: min(-10vmin,-1.5vmax)
@@ -1252,8 +1266,8 @@ body::after {
     width: min(30vmin,20.5vmax)
   }
   .page .game-container .game__cta svg {
-    width: min(100vmin,94vmax);
-    height: min(100vmin,94vmax)
+    width: min(80vmin,45vmax);
+    height: min(80vmin,94vmax)
   }
   .button {
     min-height: min(8vmin,2vmax);
